@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>profile</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body class="w3-content" style="max-width:1300px">
+
+<!-- First Grid: Logo & About -->
+
+
+
+  <div class=" w3-black w3-container w3-center" style="height:1200px">
+    <div class="w3-padding-64">
+      <center>
+      <h1>My Profile</h1>
+      <img src="images/admin.png" class="w3-margin w3-circle" alt="Person" style="width:10%">
+      <br>
+      <button class="w3-button w3-dark-grey">Edit<i class="fa fa-camera"></i></button>
+    <button class="w3-button w3-dark-grey">Remove <i class="fa fa-close"></i></button>
+</center>
+      <br>
+      
+    </div>
+   
+ 
+  <div class=" w3-blue-grey  w3-center" style="height:600px">
+    <div class="w3-padding-64 w3-center">
+       <h2>About Me</h2>
+       <form method="POST">
+   <p>First Name</p>
+            <input type="text" name="new_First_Name" placeholder="Enter Your First Name">
+            <span class="error">*<?php echo $newFirstNameErr;?></span>
+            <br>
+            <p>Last Name</p>
+            <input type="text" name="new_Last_Name" placeholder="Enter Your Last Name">
+            <span class="error">*<?php echo $newLastNameErr;?></span>
+            <br>
+            <p>Username</p>
+            <input type="text" name="new_username" placeholder="Enter Your Username">
+            <span class="error">*<?php echo $newusernameErr;?></span>
+            <br>
+            <p>New Password</p>
+            <input type="password" name="new_password" placeholder="Enter Your New Password">
+            <span class="error">*<?php echo $newpasswordErr;?></span>
+            <br>
+          <p>Email</p>
+            <input type="text" name="new_email" placeholder="Enter Your Email">
+            <span class="error">* <?php echo $newemailErr;?></span>
+            <br>
+            <input type="submit" name="CREATE" value="CREATE">
+      
+        </form>
+    <button class="w3-button w3-dark-grey">Edit <i class="fa fa-arrow-right"></i></button>
+    <button class="w3-button w3-dark-grey">Delete  <i class="fa fa-arrow-right"></i></button>
+  </div>
+</div>
+</form>
+      
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+ 
+  
+
+
+
+
+
+
+
+

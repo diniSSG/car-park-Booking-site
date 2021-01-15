@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html><head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<style>
+.w3-sidebar a {background:"black",font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+
+w3-sidebar {width: 120px;background: #222;}
+#main {margin-left: 120px}
+
+.btn {
+    display: inline-block;
+    border: #2e6da4;
+    border-style: solid;
+    border-width: 2px;
+    width:50px;
+    height:30px;
+    border-radius: 6px;
+    background: linear-gradient(#FFFFFF, #B0B0B0);
+    font-weight: bold;
+    color: green;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+.btn:hover {
+    background: linear-gradient(#152B40, #152B40);
+    color: white
+    }
+.btn:focus {
+    background: linear-gradient(#152B40, #152B40);
+    color: white
+    }
+.button-selected {
+    border: 4px solid red;
+}   
+
+    
+
+
+
+</style>
+ <script type="text/javascript">
+
+    function focusMe(button) {
+    document.getElementsByClassName("button-selected")[0].className = "";
+    button.className = "button-selected";
+}
+
+    </script>
+
+</head>
+<body class="w3-content w3-black" style="max-width:1300px " >
+
+
+  <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center w3-black">
+  <!-- Avatar image in top left corner -->
+  <img src="images/black.jpg" style="width:100%">
+  <a href="scapsyweb.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#p1" class="w3-bar-item w3-button w3-padding-large w3-hover-gray">
+    <i class="fa fa-car w3-xxlarge"></i>
+    <p>LEVEL 1</p>
+  </a>
+  <a href="#p2" class="w3-bar-item w3-button w3-padding-large w3-hover-gray">
+    <i class="fa fa-car w3-xxlarge"></i>
+    <p>LEVEL 2</p>
+  </a>
+  <a href="#footer" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-large w3-hover-black"onclick="document.getElementById('newsletter').style.display='block'">
+
+    <i class="fa fa-pencil w3-xxlarge"></i>
+    <p>NEWSLETTER</p>
+</nav>
+
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT US</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">ADMIN</a>
+    <a href="" class="w3-bar-item w3-button" style="width:25% !important">PROFILE</a>
+  </div>
+</div>
+
+<!-- Sidebar/menu -->
+<
+
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-24 w3-wide">LOGO</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge  w3-padding-25 w3-center w3-black">
+    
+    <p class="w3-left">SCaPSy</p>
+    <p class="w3-right">
+     
+      <i class="fa fa-search"></i>
+    </p>
+  </header>
+
+  <!-- Image header -->
+  <div class="w3-display-container w3-container w3-black" >
+   
+   
+<div class="position-relative overflow-hidden ">
+          <video class="position-relative w-100" autoplay="" loop="" muted="" playsinline="" webkit-playsinline="" heigt="500" style="transform: scale(1.01, 1.04);">
+            <source src="images\interoperable.mp4" type="video/mp4">
+          </video>
+        </div>
+
+    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+      <h1 class="w3-jumbo w3-hide-small"><font color="black">Book My Slot</font></h1>
+      <h1 class="w3-hide-large w3-hide-medium">Book My Slot</h1>
+      <h1 class="w3-hide-small"></h1>
+      <p><a href="#p1" class="w3-button w3-black w3-padding-large w3-large">GO</a></p>
+    </div>
+  </div>
+
+  <div class="w3-container w3-text-grey" id="p1">
+    <p>LEVEL 01</p>
+  </div>
+
+  <!-- Product grid -->
+  <hr>
+<div class="w3-white">
+  <br>
+ <div class="w3-row w3-grayscale">
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+<div class="w3-display-container">
+        <img src="images/one.jpg" style="width:50%">
+        <div class="w3-display-middle w3-display-hover">
+
+      </div>
+       <button class="btn" id="rghtbtn1"onclick="document.getElementById('ticketModal').style.display='block'"> 1<i class="fa fa-check"></i></button>
+      </div>
+      
+        <p>SLOT 1<br><b class="w3-text-red"></p>
+      </div>
+
+
+     
+
+      <hr>
+      <div class="w3-container">
+        <div class="w3-display-container">
+        <img src="images/5.jpg" style="width:50%">
+        <div class="w3-display-middle w3-display-hover">
+
+           
+        </div>
+        <button class="btn" id="rghtbtn5"onclick="document.getElementById('ticketModal').style.display='block'">5<i class="fa fa-check"></i></button>
+      </div>
+        <p>SLOT 5<br><b class="w3-text-red"></p>
+      </div>
+    </div>
+  
+    
+
+    <div class="w3-col l3 s6">
+      
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="images/two.jpg" style="width:50%">
+          
+          <div class="w3-display-middle w3-display-hover">
+           
+          </div>
+            <button class="btn" id="rghtbtn5"onclick="document.getElementById('ticketModal').style.display='block'">2<i class="fa fa-check"></i>
+        </div>
+        <p>SLOT 2<br><b class="w3-text-red"></p>
+      </div>
+      <hr>
+      <div class="w3-container">
+        <div class="w3-display-container">
+        <img src="images/6.jpg" style="width:50%">
+         <div class="w3-display-middle w3-display-hover">
+
+            
+        </div>
+         <button class="btn" id="rghtbtn5"onclick="document.getElementById('ticketModal').style.display='block'">6<i class="fa fa-check"></i>
+      </div>
+        <p>SLOT 6<br><b class="w3-text-red"></p>
+      </div>
+    </div>
+  
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+        <img src="images/3.jpg" style="width:50%">
+       <div class="w3-display-middle w3-display-hover">
+           
+          </div>
+            <button class="btn" id="rghtbtn5"onclick="document.getElementById('ticketModal').style.display='block'">3<i class="fa fa-check"></i>
+        </div>
+        <p>SLOT 3<br><b class="w3-text-red"></p>
+      </div>
+      <hr>
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="images/7.jpg" style="width:50%">
+          
+          <div class="w3-display-middle w3-display-hover">
+           
+
+          </div>
+           <button class="btn" id="rghtbtn7" onclick="document.getElementById('ticketModal').style.display='block'"> 7<i class="fa fa-check"></i></button>
+        </div>
+        <p>SLOT 7<br><b class="w3-text-red"></p>
+      </div>
+    </div>
+
+     <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+        <img src="images/4.jpg" style="width:50%">
+        <div class="w3-display-middle w3-display-hover">
+           
+          </div>
+            <button class="btn" id="rghtbtn5"onclick="document.getElementById('ticketModal').style.display='block'">4<i class="fa fa-check"></i>
+        </div>
+        <p>SLOT 4<br><b class="w3-text-red"></p>
+      </div>
+      <hr>
+      <div class="w3-container">
+        <div class="w3-display-container">
+        <img src="images/8.png" style="width:50%">
+        <div class="w3-display-middle w3-display-hover">
+           
+
+          </div>
+          <button class="btn" id="rghtbtn5"onclick="document.getElementById('ticketModal').style.display='block'">8<i class="fa fa-check"></i>
+        </div>
+        <p>SLOT 8<br><b class="w3-text-red"></p>
+      </div>
+    </div>
+  </div>
+   <div class="w3-container w3-text-grey w3-black" id="p2">
+    <p>LEVEL 02</p>
+  </div>
+<br>
+  <hr>
+  <div class="w3-row w3-grayscale">
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+<div class="w3-display-container">
+        <img src="images/one.jpg" style="width:50%">
+        <div class="w3-display-middle w3-display-hover">
+
+      </div>
+        <button class="btn" id="rghtbtn5"onclick="document.getElementById('ticketModal').style.display='block'">1<i class="fa fa-check"></i>
+      </div>
+      
+        <p>SLOT 1<br><b class="w3-text-red"></p>
+      </div>
+      <hr>
+      <div class="w3-container">
+        <div class="w3-display-container">
+        <img src="images/5.jpg" style="width:50%">
+        <div class="w3-display-middle w3-display-hover">
+
+           
+        </div>
+         <button class="btn" id="rghtbtn5"onclick="document.getElementById('ticketModal').style.display='block'">5<i class="fa fa-check"></i>
+      </div>
+        <p>SLOT 5<br><b class="w3-text-red"></p>
+      </div>
+    </div>
+
+   <div class="w3-col l3 s6">
+      
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="images/two.jpg" style="width:50%">
+          
+          <div class="w3-display-middle w3-display-hover">
+            
+          </div>
+           <button class="btn" id="rghtbtn5"onclick="document.getElementById('ticketModal').style.display='block'">2<i class="fa fa-check"></i>
+        </div>
+        <p>SLOT 2<br><b class="w3-text-red"></p>
+      </div>
+      <hr>
+      <div class="w3-container">
+        <div class="w3-display-container">
+        <img src="images/6.jpg" style="width:50%">
+         <div class="w3-display-middle w3-display-hover">
+
+           
+        </div>
+         <button class="btn" id="rghtbtn5"onclick="document.getElementById('ticketModal').style.display='block'">6<i class="fa fa-check"></i>
+      </div>
+        <p>SLOT 6<br><b class="w3-text-red"></p>
+      </div>
+    </div>
+     <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+        <img src="images/3.jpg" style="width:50%">
+       <div class="w3-display-middle w3-display-hover">
+           
+          </div>
+            <button class="btn" id="rghtbtn5"onclick="document.getElementById('ticketModal').style.display='block'">3<i class="fa fa-check"></i>
+        </div>
+        <p>SLOT 3<br><b class="w3-text-red"></p>
+      </div>
+      <hr>
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="images/7.jpg" style="width:50%">
+          
+          <div class="w3-display-middle w3-display-hover">
+            
+          </div>
+          <button class="btn" id="rghtbtn5"onclick="document.getElementById('ticketModal').style.display='block'">7<i class="fa fa-check"></i>
+        </div>
+        <p>SLOT 7<br><b class="w3-text-red"></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+        <img src="images/4.jpg" style="width:50%">
+        <div class="w3-display-middle w3-display-hover">
+            
+          </div>
+           <button class="btn" id="rghtbtn5"onclick="document.getElementById('ticketModal').style.display='block'">4<i class="fa fa-check"></i>
+        </div>
+        <p>SLOT 4<br><b class="w3-text-red"></p>
+      </div>
+      <hr>
+      <div class="w3-container">
+        <div class="w3-display-container">
+        <img src="images/8.png" style="width:50%">
+        <div class="w3-display-middle w3-display-hover">
+           
+          </div>
+          <button class="btn" id="rghtbtn5"onclick="document.getElementById('ticketModal').style.display='block'">8<i class="fa fa-check"></i>
+        </div>
+        <p>SLOT 8<br><b class="w3-text-red"></p>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- Subscribe section -->
+  <div class="w3-container w3-black w3-padding-32">
+    <h1>Subscribe</h1>
+    <p>To get  VIP treatment:</p>
+    <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+    <button type="button" class="w3-button w3-red w3-margin-bottom">Subscribe</button>
+  </div>
+
+  
+  <!-- Footer -->
+  <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+    <div class="w3-row-padding">
+      <div class="w3-col s4">
+        <h4>Contact</h4>
+        <p>Questions? Go ahead.</p>
+        <form action="/action_page.php" target="_blank">
+          <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Subject" name="Subject" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Message" name="Message" required></p>
+          <button type="submit" class="w3-button w3-block w3-black">Send</button>
+        </form>
+      </div>
+
+      <div class="w3-col s4">
+        <h4>About</h4>
+        <p><a href="scapsyweb.html">About us</a></p>
+        
+        <p><a href="#">Support</a></p>
+        <p><a href="#">downlod app</a></p>
+        <p><a href="#">Payment</a></p>
+        <p><a href="#">Return</a></p>
+        <p><a href="#">Help</a></p>
+      </div>
+
+      <div class="w3-col s4 w3-justify">
+        <h4>Store</h4>
+        <p><i class="fa fa-fw fa-map-marker"></i> SCaPSy</p>
+        <p><i class="fa fa-fw fa-phone"></i> +94 774563901</p>
+        <p><i class="fa fa-fw fa-envelope"></i> scapsy@mail.com</p>
+        <h4>We accept</h4>
+        <p><i class="fa fa-fw fa-cc-amex"></i> visa</p>
+        <p><i class="fa fa-fw fa-credit-card"></i> Credit Card</p>
+        <br>
+        <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
+        <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
+        <i class="fa fa-snapchat w3-hover-opacity w3-large"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity w3-large"></i>
+        <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
+        <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
+      </div>
+    </div>
+  </footer>
+
+  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">SCaPSy</a></div>
+
+  <!-- End page content -->
+</div>
+
+<!-- Newsletter Modal -->
+<div id="newsletter" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+    <div class="w3-container w3-white w3-center">
+      <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+      <h2 class="w3-wide">NEWSLETTER</h2>
+      <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+<!-- Ticket Modal -->
+  <div id="ticketModal" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal w3-center w3-padding-32"> 
+        <span onclick="document.getElementById('ticketModal').style.display='none'" 
+       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>BookNow</h2>
+      </header>
+      <div class="w3-container">
+        <p><label><i class="fa fa-shopping-cart"></i> Tickets, $50 per hour</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="Date">
+        <input class="w3-input w3-border" type="text" placeholder="time">
+        <p><label><i class="fa fa-user"></i> Send To</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="Enter email">
+        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">Book <i class="fa fa-check"></i></button>
+        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+      </div>
+    </div>
+  </div>
+
+
+<script>
+// Accordion 
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
