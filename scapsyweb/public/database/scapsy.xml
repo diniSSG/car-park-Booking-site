@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.7.4
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Generation Time: Apr 22, 2020 at 12:04 PM
+- Server version: 10.1.28-MariaDB
+- PHP Version: 7.0.24
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="scapsy" collation="latin1_swedish_ci" charset="latin1">
+            <pma:table name="signup">
+                CREATE TABLE `signup` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `firstname` varchar(100) NOT NULL,
+                  `lastname` varchar(100) DEFAULT NULL,
+                  `username` varchar(50) NOT NULL,
+                  `password` varchar(8) NOT NULL,
+                  `email` varchar(50) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'scapsy'
+    -->
+    <database name="scapsy">
+        <!-- Table signup -->
+        <table name="signup">
+            <column name="id">1</column>
+            <column name="firstname">dini</column>
+            <column name="lastname">gamage</column>
+            <column name="username">dinigamage</column>
+            <column name="password">123</column>
+            <column name="email">dini@gm.com</column>
+        </table>
+        <table name="signup">
+            <column name="id">2</column>
+            <column name="firstname">nicky</column>
+            <column name="lastname">dona</column>
+            <column name="username">dnt</column>
+            <column name="password">123</column>
+            <column name="email">nickydona@gm.com</column>
+        </table>
+    </database>
+</pma_xml_export>
