@@ -1,0 +1,284 @@
+<?php
+session_start();
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "scapsy";
+?>
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<title>Road Development Authority</title>
+    <link rel="icon" type="image/png" href="ASSETS\favicon.png">
+</head>
+<body>
+    <style>
+
+body{
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    background-color: #ddd;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4)),url(images/blackred.jpg);
+}
+header
+{
+    height: 200px;
+}
+
+.main-nav
+{
+     float: right;
+     list-style: none;
+     margin-top: 30px;
+}
+
+.main-nav li
+{
+    display: inline-block;
+}
+
+.main-nav li a
+{
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: "Roboto",sans-serif;
+    font-size: 15px;
+}
+
+.main-nav li.active a
+{
+    border: 2px solid #67b12f;
+    background-color: #67b12f;
+    border-radius: 10px;
+}
+
+.main-nav li a:hover
+{
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.logo img
+{
+    width:500px;
+    height: 500px;
+    float:left;
+    margin-left: 20px;
+    position: center;
+}
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {   
+    flex: 40%;
+    background-color: white;
+    padding: 20px;
+    height: 500px;
+    background-color: transparent;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.user
+{
+  background-color: #f1f1f1;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  float: right;
+}
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    
+    width: 350px;
+    background-color: transparent;
+    padding: 10px;
+    float: right;
+}
+.side_h
+{
+    width: 350px;
+    height: auto;
+    background-color: transparent;
+    float: right;
+}
+.side_b
+{
+    overflow: auto;
+    width: 350px;
+    height: 600px;
+    background-color: transparent;
+    float: right;
+}
+#logout:hover
+{
+  border: 2px solid tomato;
+  background-color: tomato;
+}
+.pageicons
+{
+  width: 30px;
+  height: 30px;
+}
+.confirmed
+{
+  border: 2px solid MediumSeaGreen;
+  width: auto;
+  height: 100px;
+  border-radius: 20px;
+  margin-right: 5px;
+  background-color: white;
+  color:white;
+  background-color: rgba(0,0,0,0.3);
+  font-weight: bold;
+}
+.unconfirmed
+{
+  border: 2px solid orange;
+  width: auto;
+  height: 150px;
+  border-radius: 20px;
+  margin-right: 5px;
+  background-color: white;
+  background-color: #ddd;
+  margin-bottom: 20px;
+}
+.confirmed_img
+{
+    float: right; 
+    width: 50px;
+    height: 50px; 
+    margin:10px 20px 9px 9px;
+}
+
+#lolcation_del_button
+{
+  background-image: url("del.png");
+  background-color: transparent;
+  border: none;
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: pointer;
+}
+#confirm_button
+{
+  background-image: url("confirm.png");
+  background-color: transparent;
+  border: none;
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: pointer;
+}
+#confirm_button:hover
+{
+    background-color: #ddd;
+}
+#info_button
+{
+  background-image: url("info.png");
+  background-color: transparent;
+  border: none;
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#track_button_ppl
+{
+  background-image: url("prpl_track.png");
+  background-color: transparent;
+  border: none;
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: pointer;
+}
+#track_button_green
+{
+  background-image: url("green_track.png");
+  background-color: transparent;
+  border: none;
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: pointer;
+}
+.btn
+{
+    float: right;
+    margin: 50px;   
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: "Roboto",sans-serif;
+    font-size: 15px;
+    border: 2px solid white;
+    color: white;
+}
+.btn:hover
+{
+
+    background-color: #67b12f;
+    color: white;
+    border: 2px solid #67b12f;
+}
+@media screen and (max-width: 100px) {
+    .row {   
+        flex-direction: column;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width:100%;
+    }
+}
+    </style>
+    <header>
+    <div class="logo"><img src="images/scapsy.png"></div>
+    <div><a href="scapsyweb.html" class="btn">Join with us</a></div>
+    </header>
+<!--|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+    <div class="row" >
+        <!--side 1-->
+        
+        <!--main-->
+        
+        
+
+<!--|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+</body>
+</html>
